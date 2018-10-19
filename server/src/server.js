@@ -4,6 +4,7 @@ import cors from 'cors';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 
 import db from '../models'
+import schema from './schema'
 
 let app = express();
 app.use('*', cors());
