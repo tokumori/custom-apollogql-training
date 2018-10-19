@@ -9,13 +9,13 @@ const typeDefs = `
     lastName: String
   }
    type Query {
-    people(id: ID!, firstName: String, middleName: String, lastName: String): Person
+    person(id: ID!, firstName: String, middleName: String, lastName: String): Person
   }
 `
 
 const resolvers = {
   Query: {
-    people: (_, args) => {
+    person: (_, args) => {
       return Person.find({where: args})
     }
   }
