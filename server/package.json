@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "echo \"Error: DIS NO WORK\" && exit 1",
-    "test": "babel-node src/server.js"
+    "test": "nodemon --exec babel-node src/server.js"
   },
   "keywords": [],
   "author": "",
